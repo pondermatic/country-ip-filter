@@ -2,8 +2,6 @@
 
 # Country IP Address Filter is used to deny or accept all IP
 # addresses from certain countries.
-# This script will execute all of the country scripts in
-# the ./allow and ./block directories.
 # It should be ran after the system has started up because
 # the ipset sets and the iptables rules do not survive a reboot.
 # It should also be ran periodically to update the country IP
