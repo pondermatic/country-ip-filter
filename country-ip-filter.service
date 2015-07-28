@@ -1,0 +1,13 @@
+[Unit]
+Description=Country IP Address Block Filter
+After=multi-user.target
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/root/country-ip-filter/country-ip-filter.sh
+RemainAfterExit=yes
+RestartSec=1day
+Restart=always
